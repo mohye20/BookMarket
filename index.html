@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body-color">
+    <div class="container py-2">
+     <div class="bookmarkBody">
+        <h1 class="py-2 text-center">Bookmarker</h1>
+        <h2 class="py-2 text-center">
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+        </h2>
+
+        <div  class="form-group mb-3">
+            <label for="" class="mb-3">
+                <i class="fa-solid fa-book-bookmark "></i>
+                Site Name
+            </label>
+
+            <input type="text" placeholder="Bookmark Name" class="form-control " oninput="validSiteName()" id="bookMarkName">
+        </div>
+
+        <div  class="form-group mb-3">
+            <label for="" class="mb-3">
+                <i class="fa-solid fa-book-bookmark"></i>
+                Site URL
+                
+            </label>
+
+            <input type="text" placeholder="Bookmark Name" class="form-control" id="websiteUrl" oninput="validSiteURL()">
+        </div>
+
+        <button class="btn btn-lg bg-info  mb-3  mx-auto d-flex" onclick="addWebSite()" >Submit</button>
+
+     </div>
+
+        <table class="table  text-center">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+
+            <tbody id="tBody">
+             
+            </tbody>
+
+        </table>
+
+        <div class="box-info position-absolute  top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center d-none" id="boxInfo">
+            <div class="box-content bg-white p-4 rounded">
+                <div class="circles  d-flex">
+                    <span class="rounded-circle bg-danger me-2"></span>
+                    <span class="rounded-circle bg-warning me-2"></span>
+                    <span class="rounded-circle bg-success  me-2"></span>
+                    <button onclick="removeBox()" class="btn ms-auto border-0"><i class="fa-solid fa-xmark close fs-3"></i></button>
+                 
+    
+    
+                </div>
+
+                <p class="m-0 pb-2 fw-bolder">
+                    Site Name or Url is not valid, Please follow the rules below :
+                  </p>
+                  <ol class="rules list-unstyled m-0">
+                    <li>
+                      <i class="fa-regular text-danger fa-circle-right p-2"></i>
+                      <span class="fw-bolder">
+                        Site name must
+                      contain at least 3 characters
+                      </span>
+                    </li>
+                    <li>
+                      <i class="fa-regular text-danger fa-circle-right p-2"></i>
+                      <span class="fw-bolder">Site URL must be a
+                        valid one</span>
+                    </li>
+                  </ol>
+            </div>
+            </div>
+    </div>
+    
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

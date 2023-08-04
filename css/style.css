@@ -1,0 +1,43 @@
+:root {
+    --main-color: #fec260;
+}
+
+.body-color{
+    background-color: var(--main-color);
+}
+
+.box-info{
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: contain;
+
+}
+
+.btn-visit{
+    color: white;
+    background-color: #9eb23b;
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8a9e23;
+    --bs-btn-hover-border-color: #6e8018;
+}
+
+.btn-Delete{
+    color: white;
+    background-color: #eb1d36;
+    --bs-btn-border-color: #eb1d36;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d30820;
+    --bs-btn-hover-border-color : #d30820 ; 
+}
+
+.circles span {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+
+.box-conent {
+    width: 500px;
+    z-index: 10;
+}
