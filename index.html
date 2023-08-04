@@ -10,8 +10,9 @@
 </head>
 <body class="body-color">
     <div class="container py-2">
-     <div class="bookmarkBody">
-        <h1 class="py-2 text-center">Bookmarker</h1>
+        <h1 class="py-4 text-center position-relative">Bookmarker</h1>
+
+     <div class="bookmarkBody border-dotted my-5">
         <h2 class="py-2 text-center">
             <i class="fa-solid fa-bookmark"></i>
             Bookmark your favorite sites
@@ -37,7 +38,7 @@
             <input type="text" placeholder="Bookmark Name" class="form-control" id="websiteUrl" oninput="validSiteURL()">
         </div>
 
-        <button class="btn btn-lg bg-info  mb-3  mx-auto d-flex" onclick="addWebSite()" >Submit</button>
+        <button class="btn btn-lg bg-danger text-white   mb-3  mx-auto  d-flex" onclick="addWebSite()" >Submit</button>
 
      </div>
 
