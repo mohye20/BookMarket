@@ -64,6 +64,10 @@ function display(website) {
 function clearform() {
     siteName.value = "";
     siteURL.value = "";
+    document.querySelector("#bookMarkName").classList.remove("is-valid")
+    document.querySelector("#websiteUrl").classList.remove("is-valid")
+
+
 }
 
 
